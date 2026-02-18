@@ -7,7 +7,9 @@ export default defineNuxtConfig({
   ssr: false, 
   
   srcDir: 'app/', 
-  
+  nitro: {
+      serverDir: 'server'  
+    }as any,
   app: {
     head: {
       title: '心情播放器',
